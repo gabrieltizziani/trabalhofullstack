@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Pessoas</h1>
+        <form id="formPessoa">
+            <label for="nomePessoa">Nome Pessoa:</label>
+            <input type="text" name="nomePessoa" id="nomePessoa">
+
+            <label for="cpfPessoa">CPF Pessoa:</label>
+            <input type="text" name="cpfPessoa" id="cpfPessoa">
+            
+            <label for="numeroPessoa">Número Pessoa:</label>
+            <input type="text" name="numeroPessoa" id="numeroPessoa">
+
+            <button class="btn-cadastrar" type="submit">Cadastrar</button>
+            <button class="btn-visualizar">Visualizar</button>
+        </form>
+        <p id="message"></p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
