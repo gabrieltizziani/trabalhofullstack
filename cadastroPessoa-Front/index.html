@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -20,11 +21,33 @@
             <input type="text" name="numeroPessoa" id="numeroPessoa">
 
             <button class="btn-cadastrar" type="submit">Cadastrar</button>
-            <button class="btn-visualizar">Visualizar</button>
+            <button class="btn-visualizar" type="button" id="openModalBtn">Visualizar</button>
         </form>
         <p id="message"></p>
-
     </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2>Usuários Cadastrados</h2>
+            <div id="usuariosCadastrados">
+                <table id="tabelaUsuarios">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Número</th>
+                            <th>Açôes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- As linhas da tabela serão inseridas dinamicamente aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
