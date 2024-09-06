@@ -107,9 +107,6 @@ openModalBtn.addEventListener('click', async () => {
 });
 
 
-
-
-
 closeModalBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 });
