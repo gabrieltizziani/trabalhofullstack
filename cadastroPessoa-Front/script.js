@@ -56,7 +56,6 @@ openModalBtn.addEventListener('click', async () => {
                         <td>${pessoa.cpfPessoa}</td>
                         <td>${pessoa.numeroPessoa}</td>
                         <td>
-                            <i class="fas fa-edit edit-btn" data-id="${pessoa.idPessoa}" style="cursor:pointer; color: #4CAF50;"></i>
                             <i class="fas fa-trash delete-btn" data-id="${pessoa.idPessoa}" style="cursor:pointer; color: #f44336; margin-left: 10px;"></i>
                         </td>
                     `;
